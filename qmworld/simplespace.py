@@ -16,6 +16,8 @@ class SimpleSpace:
         print self.x, self.y
 
     def shrodinger(self):
+        # TODO criar equacao de Schrodinger aqui para resolver
+        # TODO verificar se a numpy possui as constantes h cortado e verificar como ela trabalha com funções complexas
         return self.h_cort
 
 
@@ -28,8 +30,6 @@ class SimpleSpace:
         for i in self.x:
             self.y.append(amp*np.cos(freq*i + phase))
         return self.y
-
-    def addsteppotential(self):
 
     def show(self):
         plot.simplePlot(self)
