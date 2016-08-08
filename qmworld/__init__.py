@@ -1,8 +1,4 @@
-import core
-import plot
+import simplespace as ss, plot
 
-f = core.gennormalizedwavepackage()
-f2 = core.gensinwave(0, 100, 10, 1, 10, 0)
-print (f2)
-# plot.simplePlot(f2)
-plot.simplePlot(core.fourrierTransform(f2))
+s1 = ss.SimpleSpace()
+s1.show()

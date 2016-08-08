@@ -1,7 +1,7 @@
+import matplotlib.pyplot as plt , simplespace as ss
 
-import matplotlib.pyplot as plt
 
+def simplePlot(space):
 
-def simplePlot(func):
-    plt.plot(func)
+    plt.plot(space.x, space.y)
     plt.show()
